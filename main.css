@@ -1,0 +1,335 @@
+/* Global Var */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+ body {
+    font-family: Helvetica, sans-serif, Arial;
+    color: #212529;
+}
+
+/* Header */
+header {
+   padding: 10px 100px;
+}
+header .imglogo {
+    height: 70px;
+    width: 160px;
+    box-sizing: border-box;
+}
+header .socmedia {
+    float: right;
+    display: flex;
+    padding-top: 30px;
+}
+header .socmedia .fbimglogo{
+    height: 25px;
+    box-sizing: border-box;
+}
+/* Nav */
+nav {
+    width: 100%;
+    height: 40px;
+    background-color: #2368a2;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+nav ul {
+    display: flex;
+    padding: 0 20px;
+    float: right;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    display: block;
+    color: #f3f7fa;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 40px;
+}
+nav ul li a:hover {
+    background-color: #1a4971;
+    color: #cad5de;
+}
+/* SECTION 1 */
+section{
+    width: 100%;
+    height: 100vh;
+}
+section.section-1{
+    background-image: url(img/jasmin-ne.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /*Parallax*/
+}
+section.section-1 .section-1-content{
+    text-align: right;
+    padding-top: 130px;
+}
+section.section-1 .section-1-content h1{
+    font-size: 4em;
+    font-family: sans-serif;
+    color: rgb(39, 35, 29);
+    padding-right: 50px;
+}
+section.section-1 .section-1-content p{
+    font-family: sans-serif;
+    color: rgb(56, 55, 53);
+    padding-right: 50px;
+}
+section.section-1 .section-1-content a.btn{
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 130px;
+    color: #f3f7fa;
+    background-color: #2368a2;
+    border: 3px solid #f3f7fa;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2 ease-out;
+}
+section.section-1 .section-1-content a.btn:hover{
+    background-color: #1a4971;
+    color: #cad5de;
+}
+/* SECTION 2 */
+section.section-2{
+    background-color: #f3f7fa;
+}
+section.section-2 .section-2-content{
+    display: flex;
+    padding-top: 70px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+section.section-2 .section-2-content .sec2text{
+    display: inline-block;
+}
+section.section-2 .section-2-content .space{
+    height: 30px;
+}
+section.section-2 .section-2-content h2{
+    font-size: 2em;
+    text-align: left;
+    margin-left: 40px;
+}
+section.section-2 .section-2-content p{
+    font-size: 1em;
+    margin-left: 40px;
+    padding-top: 30px;
+    width: 75%;
+    text-align: justify;
+    font-style: italic;
+}
+section.section-2 .section-2-content .bg {
+    background-color: #1a4971;
+    color: #cad5de;
+    padding-bottom: 30px;
+}
+section.section-2 .section-2-content .sec2imgcont{
+    margin-left: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 30px;
+    color: #f3f7fa;
+    opacity: 0.8;
+    cursor: pointer;
+    padding: 20px;
+}
+#prevBtn:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    left: 47.8%;
+    z-index: 10;
+    font-size: 30px;
+    color: #f3f7fa;
+    opacity: 0.8;
+    cursor: pointer;
+    padding: 20px;
+}
+#nextBtn:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+section.section-2 .section-2-content .sec2imgcont .sec2carousel{
+    display: flex;
+    height: 500px;
+    width: 700px;
+    box-sizing: border-box;
+    z-index: inherit;
+}
+section.section-2 .section-2-content .sec2imgcont .sec2carousel .sec2img{
+    height: 500px;
+    width: 100%;
+}
+/* SECTION 3 */
+section.section-3{
+    background-color: #1a4971;
+    color: #cad5de;
+}
+section.section-3 h2{
+    font-size: 2em;
+    text-align: center;
+    padding-top: 120px;
+    width: 100%;
+}
+section.section-3 .section-3-content{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+section.section-3 .section-3-content ul{
+    float: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.section-3 .section-3-content ul li{
+    list-style: none;
+    margin: auto;
+    padding-top: 3%;
+}
+section.section-3 .section-3-content ul li img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+section.section-3 .section-3-content ul li figcaption {
+    margin-top: 30px;
+}
+section.section-3 .section-3-content ul li figcaption a {
+    padding: 10px;
+    color: #f3f7fa;
+    background-color: #2368a2;
+    text-decoration: none;
+    font-style: italic;
+}
+section.section-3 .section-3-content ul li figcaption p {
+    text-decoration: none;
+    font-style: italic;
+    padding-left: 5px;
+    width: 60%;
+    margin: auto;
+}
+/* SECTION 4 */
+section.section-4{
+    background-image: url(img/oleg-magni.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /*Parallax*/
+}
+section.section-4 .section-4-content{
+    position: absolute;
+    display: flex;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+}
+section.section-4 .section-4-content .push{
+    width: 50%;
+}
+section.section-4 .section-4-content .sec4-textcont{
+    width: 50%;
+    padding-top: 15%;
+    padding-left: 25%;
+}
+section.section-4 .section-4-content .sec4-textcont .sec4-textbox{
+    padding: 15px;
+    width: 75%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f3f7fa;
+}
+section.section-4 .section-4-content .sec4-textcont .sec4-textbox h2{
+    padding-top: 20px;
+    font-size: 2em;
+    text-align: left;
+    margin-left: 30px;
+}
+section.section-4 .section-4-content .sec4-textcont .sec4-textbox p{
+    font-size: 1em;
+    margin-left: 30px;
+    padding-top: 20px;
+    width: 85%;
+    font-style: italic;
+}
+section.section-4 .section-4-content .sec4-textcont .sec4-textbox a.btn{
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 130px;
+    color: #f3f7fa;
+    background-color: #2368a2;
+    border: 3px solid #f3f7fa;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2 ease-out;
+}
+section.section-4 .section-4-content .sec4-textcont .sec4-textbox a.btn:hover{
+    background-color: #1a4971;
+    color: #cad5de;
+}
+/* Footer */
+footer {
+    background-color: #2368a2;
+    text-align: center;
+    height: 15vh;
+}
+footer p{
+    padding-top: 15px;
+    font-size: 0.75em;
+}
+footer a i{
+    text-decoration: none;
+    font-size: 1.5em;
+    padding-top: 15px;
+    color: #f3f7fa;
+}
+/* GoToTop Button */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #2368a2; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    height: 35px;
+    width: 35px; 
+    font-size: 25px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #1a4971;
+    color: #cad5de;
+  }
