@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
     <title>New Creation Christian Fellowship</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#locations">Locations</a></li>
-            <li><a href="#music_avenue">Music Avenue</a></li>
+            <li><a href="#section-4">Music Avenue</a></li>
         </ul>
     </nav>
     <section id="home" class="section-1">
@@ -35,14 +35,21 @@
     <section id="about" class="section-2">
         <div class="section-2-content">
             <div class="sec2imgcont">
-                <i class="fas fa-angle-double-left" id="prevBtn"></i>
-                <i class="fas fa-angle-double-right" id="nextBtn"></i>
-                <div class="sec2carousel">
-                    <img class="sec2img" src="img/slide-people.jpg" id="lastclone" alt="Praise">
-                    <img class="sec2img" src="img/slide-bible.jpg" alt="Bible">
-                    <img class="sec2img" src="img/slide-book.jpg" alt="Worship">
-                    <img class="sec2img" src="img/slide-people.jpg" alt="Praise">
-                    <img class="sec2img" src="img/slide-bible.jpg" id="firstclone"alt="Bible">
+                <div class="sec2slides fade">
+                    <img src="img/slide-bible.jpg" alt="Bible">
+                </div>
+                <div class="sec2slides fade">
+                    <img src="img/slide-book.jpg" alt="Worship">
+                </div>
+                <div class="sec2slides fade">
+                    <img src="img/slide-people.jpg" alt="Praise">
+                </div>
+                <i class="fas fa-angle-double-left prev" onclick="plusSlides(-1)"></i>
+                <i class="fas fa-angle-double-right next" onclick="plusSlides(1)"></i>
+                <div style="text-align:center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
             <div class="sec2text">
@@ -91,7 +98,7 @@
             </ul>
         </div>
     </section>
-    <section id="music_avenue" class="section-4">
+    <section id="section-4" class="section-4">
         <div class="section-4-content">
             <div class="push"></div>
             <div class="sec4-textcont">
