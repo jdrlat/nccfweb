@@ -16,12 +16,14 @@
         <a href="#"><img class="imglogo" src="img/nccflogo_trans.png" alt="nccf_logo"></a>
         <div class="socmedia"><a href="https://www.facebook.com/nccfsta.mesa/"><img class="fbimglogo" src="img/facebook.png" alt="facebook"></a></div>
     </header>
-    <nav>
+    <nav id="mynav" class="topnav">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#locations">Locations</a></li>
-            <li><a href="#section-4">Music Avenue</a></li>
+            <li><a href="#home" id="homenav">Home</a></li>
+            <li><a href="#about" id="aboutnav">About</a></li>
+            <li><a href="#locations" id="locationsnav">Locations</a></li>
+            <li><a href="#music_avenue" id="music_avenuenav">Music Avenue</a></li>
+            <li><a href="javascript:void(0);" class="icon" id="bars">
+                <i class="fa fa-bars"></i></a></li>
         </ul>
     </nav>
     <section id="home" class="section-1">
@@ -30,7 +32,7 @@
             <em><p>2 Corinthians 5:17 English Standard Version (ESV)</p></em>
             <a class="btn" href="#about">What to Expect</a> <a class="btn" href="#">Listen</a>
         </div>
-        <i class="fas fa-angle-double-up" onclick="topFunction()" id="myBtn"></i>
+        <i class="fas fa-angle-double-up" id="myBtn"></i>
     </section>
     <section id="about" class="section-2">
         <div class="section-2-content">
@@ -44,12 +46,12 @@
                 <div class="sec2slides fade">
                     <img src="img/slide-people.jpg" alt="Praise">
                 </div>
-                <i class="fas fa-angle-double-left prev" onclick="plusSlides(-1)"></i>
-                <i class="fas fa-angle-double-right next" onclick="plusSlides(1)"></i>
+                <i class="fas fa-angle-double-left prev" id="prevbtn"></i>
+                <i class="fas fa-angle-double-right next" id="nextbtn"></i>
                 <div style="text-align:center;">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" id="dot1"></span>
+                    <span class="dot" id="dot2"></span>
+                    <span class="dot" id="dot3"></span>
                 </div>
             </div>
             <div class="sec2text">
@@ -98,7 +100,7 @@
             </ul>
         </div>
     </section>
-    <section id="section-4" class="section-4">
+    <section id="music_avenue" class="section-4">
         <div class="section-4-content">
             <div class="push"></div>
             <div class="sec4-textcont">
