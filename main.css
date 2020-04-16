@@ -335,6 +335,7 @@ footer {
     background-color: #2368a2;
     text-align: center;
     height: 15vh;
+    padding-bottom: 10px;
 }
 footer p{
     padding-top: 15px;
