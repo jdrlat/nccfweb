@@ -346,6 +346,10 @@ footer a i{
     padding-top: 15px;
     color: #f3f7fa;
 }
+footer a{
+    text-decoration: none;
+    color: #f3f7fa;
+}
 /* GoToTop Button */
 #myBtn {
     display: none; /* Hidden by default */
