@@ -3902,10 +3902,28 @@
 
 		#footer .copyright {
 			color: #bbb;
-			font-size: 0.9rem;
 			margin: 0 0 2rem 0;
 			padding: 0;
 			text-align: center;
+		}
+
+		#footer .copyright .footnote {
+			font-size: 0.6rem;
+		}
+
+		#footer .copyright p{
+			font-size: 0.8rem;
+			font-style: oblique;
+		}
+
+		#footer .copyright .fb{
+			font-size: 1.3rem;
+		}
+
+		#footer .copyright .pray {
+			font-size: 1.2rem;
+			padding-bottom: 0.5rem;
+			padding-right: 0.3rem;
 		}
 
 		@media screen and (max-width: 736px) {
