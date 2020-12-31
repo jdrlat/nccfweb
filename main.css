@@ -17,7 +17,6 @@ header {
    padding: 0 10px;
    display: flex;
    flex-wrap: wrap;
-   border-bottom: 4px solid #2368a2;
 }
 header .imglogo {
     height: 70px;
