@@ -3354,21 +3354,21 @@
 
 			.wrapper.style3 .inner .block h3{
 				display: inline-block;
-				text-align: center;
-				padding-left: 1rem;
-				padding-right: 3rem;
+				margin: 0 auto;
 			}
 
 			.wrapper.style3 .inner h3 .blue {
 				color:#7cb6ed;
 				font-size: 2rem;
-				padding-left: 1rem;
+				margin: 0 auto;
+				width: 100%;
 			}
 
 			.wrapper.style3 .inner h3 .blue.title {
-				padding-left: 1rem;
 				color:#076ece;
 				font-size: 2.5rem;
+				margin: 0 auto;
+				width: 100%;
 			}
 
 			.wrapper.style3:before {
@@ -3731,7 +3731,7 @@
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
+			/*vertical-align: middle;*/
 			width: 7em;
 		}
 
