@@ -3366,6 +3366,11 @@
 				margin-right: auto;
 			}
 
+			.wrapper.style3 .inner .blue{
+				color:#7cb6ed;
+				width: 100%;
+			}
+
 			.wrapper.style3 .inner h3 .blue {
 				color:#7cb6ed;
 				width: 100%;
