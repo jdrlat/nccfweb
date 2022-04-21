@@ -3128,7 +3128,8 @@
 			padding: 4.5rem 0 4rem 0 ;
 		}
 		.wrapper.style3.newbg{
-			background-image: url(../../images/pic01.jpg); 
+			/*background-image: url(../../images/pic01.jpg); */
+			background-image: none;
 			background-color: #000;
 			background-size: cover;
 			background-attachment: fixed;
